@@ -1,0 +1,477 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 10rem;
+  font-family: "Heebo", sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+section {
+  background-color: hsl(0, 0%, 100%);
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1 {
+  font-family: "Rubik", sans-serif;
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: rgb(0, 0, 0);
+  padding: 0.5vw;
+}
+
+#title {
+  width: 15vw;
+  color: hsl(0, 0%, 100%);
+  padding: 1.2vw 2vw 1vw 2vw;
+  border-radius: 0 0 1vw 1vw;
+  transform: translate(5vw, -4vw);
+  background-color: hsl(0, 0%, 0%);
+}
+
+nav ul li {
+  margin: 0.5vw 1vw;
+}
+
+nav ul li a {
+  padding: 0.5vw 1.5vw;
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  border-radius: 1vw;
+  font-family: "Rubik", sans-serif;
+}
+
+nav ul li a:hover {
+  background: linear-gradient(45deg, hsl(224, 100%, 50%), hsl(224, 100%, 65%));
+  color: hsl(0, 0%, 100%);
+}
+
+#nav-profiel {
+  visibility: hidden;
+}
+
+#burger {
+  visibility: hidden;
+}
+
+header label {
+  visibility: hidden;
+}
+
+.splash {
+  background-image: linear-gradient(hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 0%, 0.5)),
+    url(../img/IMG_1158.jpg);
+  background-size: cover;
+  background-position: 0 -10vw;
+  height: 45vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsl(0, 0%, 100%);
+}
+
+.splash div {
+  padding: 2rem;
+}
+
+.favicon {
+  display: none;
+}
+
+.profiel-txt {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.2rem;
+  width: 30%;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+}
+
+.container {
+  width: 100%;
+  background: linear-gradient(
+    145deg,
+    hsla(0, 0%, 100%, 0.5),
+    hsla(0, 0%, 100%, 0.2)
+  );
+  border-radius: 1rem;
+  margin-bottom: 4rem;
+}
+
+.skills {
+  text-align: left;
+  padding: 0rem 2rem;
+  color: hsl(0, 0%, 100%);
+  border-radius: 1rem 0 0 1rem;
+  font-size: 1.5rem;
+}
+
+.skills p {
+  margin-bottom: .5rem;
+}
+
+.skill-columns {
+  display: inline-flex;
+}
+
+.skill-columns div {
+  margin-right: 10em;
+}
+
+.nl {
+  width: 90%;
+  background: linear-gradient(45deg, hsl(224, 100%, 50%), hsl(224, 100%, 65%));
+  color: hsl(0, 0%, 100%);
+}
+.en {
+  width: 85%;
+  background: linear-gradient(45deg, hsl(224, 100%, 50%), hsl(224, 100%, 65%));
+  color: hsl(0, 0%, 100%);
+}
+.fr {
+  width: 65%;
+  background: linear-gradient(45deg, hsl(224, 100%, 50%), hsl(224, 100%, 65%));
+  color: hsl(0, 0%, 100%);
+}
+
+.adobe {
+  width: 85%;
+  background: linear-gradient(45deg, hsl(224, 100%, 50%), hsl(224, 100%, 65%));
+  color: hsl(0, 0%, 100%);
+}
+
+.office {
+  width: 90%;
+  background: linear-gradient(45deg, hsl(224, 100%, 50%), hsl(224, 100%, 65%));
+  color: hsl(0, 0%, 100%);
+}
+
+#kennis {
+  background: linear-gradient(45deg, hsl(0, 0%, 17%), hsla(0, 0%, 5%));
+  padding: 7rem 0 2rem 0;
+}
+
+#kennis h2 {
+  color: hsl(0, 0%, 100%);
+}
+
+.kennis {
+  margin: 0 20% 10em 20%;
+}
+
+footer {
+  color: hsl(0, 0%, 100%);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 5vw;
+  background: linear-gradient(45deg, hsl(0, 0%, 17%), hsla(0, 0%, 5%));
+}
+
+.eigenschappen-txt {
+  padding: 5vw;
+  text-align: center;
+}
+
+.eigenschappen-txt ul li {
+  font-size: 4rem;
+  color: hsl(224, 100%, 50%);
+}
+
+.fas {
+  margin-right: 1rem;
+}
+
+.opleiding-txt {
+  display: flex;
+  height: 20rem;
+  margin: 0 5vw 0 5vw;
+  padding-top: 5vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.ervaring-txt {
+  display: flex;
+  height: 35rem;
+  margin: 0 5vw 0 5vw;
+  padding-bottom: 5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#ervaring b {
+  color: hsl(0, 0%, 17%);
+}
+
+.left-col {
+  width: 50%;
+}
+
+.right-col {
+  width: 50%;
+}
+.img-bg-opleiding {
+  background-image: url(../img/debby-hudson-asviIGR3CPE-unsplash.jpg);
+  background-size: cover;
+  background-position: 0 -8vw;
+}
+
+.col-txt {
+  text-align: center;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+
+.img-bg-ervaring {
+  background-image: url(../img/ux-indonesia-qC2n6RQU4Vw-unsplash.jpg);
+  background-size: cover;
+}
+
+#kenmerken {
+  display: flex;
+  border-bottom: dotted 5px hsl(0, 0%, 17%);
+}
+
+#kenmerken article {
+  width: 50%;
+}
+
+.container-ref {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.ref {
+  padding: 5vw;
+  text-align: center;
+}
+
+.ref img {
+  margin-top: 3vw;
+  width: 10vw;
+}
+
+.ref-div {
+  width: 100%;
+  background: linear-gradient(45deg, hsl(0, 0%, 17%), hsla(0, 0%, 5%));
+  padding: 2vw;
+  height: 30vw;
+  width: 20vw;
+  border-radius: 1vw;
+  color: hsl(0, 0%, 100%);
+}
+
+@media (max-width: 1400px) {
+
+  .profiel-txt {
+    width: 100%;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 500px) {
+  * {
+    scroll-padding-top: 0;
+  }
+  #title {
+    display: none;
+  }
+
+  #nav-profiel {
+    visibility: visible;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: left;
+    align-items: flex-start;
+    border-radius: 1vw;
+    width: 100%;
+    background: none;
+    padding: 0 10vw 5vw 0;
+  }
+
+  nav ul li a {
+    padding: 1vw 3vw;
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    border-radius: 1vw;
+    font-family: "Heebo", sans-serif;
+    font-size: 2rem;
+    text-shadow: 0 0 1rem hsl(0, 0%, 0%, 0.5) !important;
+  }
+
+  nav ul li a:hover {
+    color: hsl(224, 100%, 65%);
+    background: none;
+  }
+
+  header {
+    position: fixed !important;
+    background: linear-gradient(145deg, rgb(26, 26, 26), hsla(0, 0%, 0%, 0.7));
+    border-radius: 1rem;
+    margin: 5vw;
+  }
+
+  #burger {
+    visibility: visible !important;
+  }
+
+  header label {
+    visibility: visible !important;
+  }
+
+  header nav {
+    display: none !important;
+  }
+  input#burger:checked + nav {
+    display: contents !important;
+    z-index: 101 !important;
+    overflow-y: auto !important;
+  }
+  header input {
+    display: none !important;
+  }
+  i.fa-bars {
+    padding: 1rem;
+    font-size: 2rem !important;
+    cursor: pointer;
+    color: hsl(0, 0%, 100%) !important;
+    transition: ease-in-out 0.3s all !important;
+    text-shadow: 0 0 1rem hsl(0, 0%, 0%, 0.5) !important;
+  }
+
+  .splash {
+    background-size: 250%;
+    background-position: -120vw 0;
+    height: 180vw;
+    flex-direction: column;
+  }
+
+  .profiel-txt {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: justify;
+    padding-top: 0 !important;
+  }
+
+  .favicon {
+    margin-top: 20vw;
+    display: block;
+    width: 70vw;
+  }
+
+  .opleiding-txt {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 35rem;
+    padding-top: 0;
+  }
+
+  .col-txt {
+    margin-top: 2rem;
+  }
+
+  .left-col {
+    width: 100%;
+  }
+
+  .right-col {
+    width: 100%;
+  }
+
+  .ervaring-txt {
+    display: flex;
+    flex-direction: column;
+    height: 50rem;
+  }
+
+  .img-bg-opleiding {
+    height: 60vw;
+  }
+
+  .img-bg-ervaring {
+    height: 60vw;
+  }
+  h2 {
+    margin-top: 2rem;
+  }
+
+  #kenmerken {
+    flex-direction: column;
+  }
+  #kenmerken article {
+    width: 100%;
+  }
+
+  .container-ref {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ref-div {
+    margin-bottom: 2vw;
+  }
+
+  .ref-div {
+    margin: 2rem;
+    padding: 4vw;
+    height: 65vw;
+    width: 70vw;
+    border-radius: 2vw;
+    color: hsl(0, 0%, 100%);
+  }
+
+  .ref img {
+    margin-top: 3vw;
+    width: 30vw;
+  }
+
+  .img-bg-ervaring {
+    background-attachment: scroll;
+  }
+
+  .img-bg-opleiding {
+    background-position: 0 -8vw;
+    background-attachment: scroll;
+  }
+
+  .kennis {
+    margin: 0 11% 10em 11%;
+  }
+
+  .eigenschappen-txt ul li {
+    font-size: 3rem;
+  }
+
+  footer {
+    padding: 20vw 5vw 5vw 5vw;
+  }
+}
